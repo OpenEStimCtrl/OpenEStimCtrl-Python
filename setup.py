@@ -17,7 +17,7 @@ DESCRIPTION = 'Python binding for OpenEStimCtrl'
 URL = 'https://github.com/OpenEStimCtrl/OpenEStimCtrl-Python'
 AUTHOR = 'Sound Reload'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
