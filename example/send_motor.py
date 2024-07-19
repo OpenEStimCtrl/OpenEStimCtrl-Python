@@ -12,7 +12,7 @@ async def main(address):
             thread.start()
             thread.join()
             
-        protocol = YokoNexES01('OpenEstimCtrl.dll', send_ble_data)
+        protocol = YokoNexES01('libOpenEstimCtrl.dll', send_ble_data)
         def notification_handler(characteristic, data: bytearray):
             protocol.parse_ble_data(data)
         await client.start_notify(YokoNexES01.meta_service_characteristic_rx(), notification_handler)
